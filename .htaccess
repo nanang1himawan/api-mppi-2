@@ -1,0 +1,14 @@
+RewriteEngine On # Turn on the rewriting engine
+#RewriteCond %{HTTPS} off
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteRule ^login/?$ public/login.php [NC,L]
+RewriteRule ^user/?$ public/index.php [NC,L]
+RewriteRule ^logout/?$ public/index.php [NC,L]
+RewriteRule ^test/?$ public/test.php [NC,L]
+
+
+
+#RewriteRule ^login-with-otp/?$ loginWithOtp.php [NC,L]
+#RewriteRule ^all-event/?$ all-event.php [NC,L]
+#RewriteRule ^detail-event/?$ detail-event.php [NC,L]
