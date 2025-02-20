@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . '/../app/controllers/AuthController.php';
+include __DIR__ . '/../header.php';
 $uri = explode("/", trim($_SERVER["REQUEST_URI"], "/"));
 $method = $_SERVER["REQUEST_METHOD"];
 if ($uri[1] == "login" && $method == "POST") {

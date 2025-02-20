@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . "/JWT.php"; // Sesuaikan dengan lokasi class JWTHandler
+include __DIR__ . '/../../header.php';
 
 class AuthMiddleware {
     public static function authenticate() {

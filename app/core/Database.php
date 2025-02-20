@@ -2,9 +2,14 @@
 
 class Database {
     private static $host = "localhost";
-    private static $db_name = "mppi-2"; // Ganti dengan nama database Anda
+    private static $db_name = "mppi_dev_v1"; // Ganti dengan nama database Anda
     private static $username = "root"; // Sesuaikan dengan konfigurasi MySQL Anda
     private static $password = ""; // Jika ada password, isi di sini
+
+    //private static $db_name = "nana6202_api-mppi-v1"; // Ganti dengan nama database Anda
+    //private static $username = "nana6202_mppi-v1"; // Sesuaikan dengan konfigurasi MySQL Anda
+    //private static $password = "Jbiqd,CVEg_c"; // Jika ada password, isi di sini
+
     private static $conn = null;
 
     public static function connect() {
