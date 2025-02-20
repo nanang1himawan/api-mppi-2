@@ -5,5 +5,8 @@ RewriteEngine On # Turn on the rewriting engine
 RewriteRule ^login/?$ public/login.php [NC,L]
 RewriteRule ^user/?$ public/index.php [NC,L]
 RewriteRule ^logout/?$ public/index.php [NC,L]
+RewriteRule ^active-user/?$ public/activeUser.php [NC,L]
+
+
 RewriteRule ^test/?$ public/test.php [NC,L]
 

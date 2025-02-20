@@ -10,7 +10,11 @@ if ($uri[1] == "user" && $method == "POST") {
 
     $user = new UserController();
     $user->logout();
-} else {
+} elseif ($uri[1] == "active-user" && $method == "POST") {
+    $user = new UserController();
+    $user->activeUser();
+}
+ else {
     http_response_code(404);
     echo json_encode(["message" => "Endpoint not found"]);
 }
